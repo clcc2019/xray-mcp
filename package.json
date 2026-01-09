@@ -1,0 +1,43 @@
+{
+  "name": "xray-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for generating Xray-core configurations using natural language",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "xray-mcp": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "xray",
+    "mcp",
+    "proxy",
+    "vless",
+    "vmess",
+    "trojan",
+    "shadowsocks"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "tweetnacl": "^1.0.3",
+    "tweetnacl-util": "^0.15.1",
+    "uuid": "^11.0.0",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/uuid": "^10.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
